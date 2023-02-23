@@ -1,0 +1,56 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto//Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url(../fonts/Roboto//Roboto-Light.ttf);
+}
+body {
+  font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Bold", Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+nav {
+  height: 150px;
+}
+nav .container-fluid a {
+  font-size: 1.3rem;
+}
+@media (max-width: 599px) {
+  nav .container-fluid a {
+    text-align: center;
+  }
+}
+nav .container-fluid a img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+@media (max-width: 599px) {
+  nav .container-fluid button {
+    margin: 10px auto 0;
+  }
+}
+
+/* LOGO */
+
+/*# sourceMappingURL=style.css.map */

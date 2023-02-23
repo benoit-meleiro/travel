@@ -1,0 +1,24 @@
+@import'../abstracts/variables';
+@import'../abstracts/mixins';
+nav{
+    height: 150px;
+
+    .container-fluid{
+        a{
+            font-size: $nav-link;
+            @include for-phone-only {
+                text-align:center;
+            }
+            img{               
+                @include logo($little-logo);
+                
+                
+            }
+        }
+        button{
+            @include for-phone-only {
+                margin: 10px auto 0;
+            } 
+        }
+    }   
+}
