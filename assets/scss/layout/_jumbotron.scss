@@ -1,0 +1,25 @@
+@import'../abstracts/variables';
+@import'../abstracts/mixins';
+
+header
+    .jumbotron{
+        background-color: $bg-jumbotron;
+        border-radius: 15px;
+        height: auto;
+        max-height: 515px;
+        // padding: 5rem;
+        overflow: hidden;
+            .jumb-text{
+                h1{
+                    font-size: $h1-size;
+                    color: $h1-color;
+                }
+                p{
+                    color:$jumbotron-p-color !important;
+                }
+                a{ 
+                    @include button-general(
+                    $general-button-bg, $general-button-text,$general-button-shadow)
+                }
+            }
+    }

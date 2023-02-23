@@ -11,8 +11,6 @@ nav{
             }
             img{               
                 @include logo($little-logo);
-                
-                
             }
         }
         button{

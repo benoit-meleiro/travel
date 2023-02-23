@@ -1,3 +1,5 @@
+/* LOGO */
+/* TEXT */
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  padding: 5px;
 }
 
 @font-face {
@@ -29,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* LOGO */
+/* TEXT */
 nav {
   height: 150px;
 }
@@ -52,5 +59,35 @@ nav .container-fluid a img {
 }
 
 /* LOGO */
+/* TEXT */
+header .jumbotron {
+  background-color: #E2836C;
+  border-radius: 15px;
+  height: auto;
+  max-height: 515px;
+  overflow: hidden;
+}
+header .jumbotron .jumb-text h1 {
+  font-size: 2.8rem;
+  color: white;
+}
+header .jumbotron .jumb-text p {
+  color: white !important;
+}
+header .jumbotron .jumb-text a {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.41);
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

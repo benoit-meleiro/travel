@@ -1,5 +1,7 @@
+@import'abstracts/mixins';
+@import'abstracts/variables';
 @import'base/reset';
 @import'base/typography.scss';
 @import'layout/navigation';
-@import'abstracts/mixins';
-@import'abstracts/variables';
+@import'layout/jumbotron.scss';
+@import'layout/services.scss';

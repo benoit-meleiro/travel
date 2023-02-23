@@ -3,6 +3,8 @@
     max-width: $wid;
     height: auto;
 }
+
+// media queries
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
  }
@@ -14,3 +16,19 @@
  @mixin for-desktop-up {
     @media (min-width: 1500px) { @content; }
  }
+ // button
+@mixin button-general($bg,$col,$shad){
+    color: $col;
+    background-color: $bg;
+    box-shadow: $shad;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
