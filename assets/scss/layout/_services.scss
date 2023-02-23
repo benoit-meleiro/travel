@@ -1,0 +1,16 @@
+@import'../abstracts/variables';
+@import'../abstracts/mixins';
+
+.travel-services{
+    h2{
+        font-size:$h2-size;
+        color:$h2-color;
+    }
+    .services-gallery{
+        max-height: 470px !important;
+        overflow: hidden;
+        .legende-image {
+            @include legende-on-image()
+        }
+    }
+}
