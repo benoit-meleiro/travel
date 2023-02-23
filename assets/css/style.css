@@ -1,5 +1,6 @@
 /* LOGO */
 /* TEXT */
+/* IMAGES */
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  padding: 5px;
+  margin: 0 10px;
 }
 
 @font-face {
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* LOGO */
 /* TEXT */
+/* IMAGES */
 nav {
   height: 150px;
 }
@@ -60,6 +62,7 @@ nav .container-fluid a img {
 
 /* LOGO */
 /* TEXT */
+/* IMAGES */
 header .jumbotron {
   background-color: #E2836C;
   border-radius: 15px;
@@ -92,19 +95,73 @@ header .jumbotron .jumb-text a {
 
 /* LOGO */
 /* TEXT */
+/* IMAGES */
 .travel-services h2 {
   font-size: 3rem;
   color: black;
 }
-.travel-services .services-gallery {
+.travel-services .row .services-gallery {
   max-height: 470px !important;
   overflow: hidden;
+  gap: 4px;
+  padding: 5px;
 }
-.travel-services .services-gallery .legende-image {
+@media (max-width: 599px) {
+  .travel-services .row .services-gallery {
+    max-height: 960px !important;
+    gap: 8px;
+  }
+}
+.travel-services .row .services-gallery .block-services {
+  position: relative;
+  margin: 0;
+}
+.travel-services .row .services-gallery .block-services img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.travel-services .row .services-gallery .block-services .legende-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+.travel-services .row .services-gallery .block-services p {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+.travel-services .row .services-gallery .block-services a {
+  text-decoration: none;
+  color: white;
+}
+.travel-services .row .services-gallery .little-img {
+  height: 225px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 599px) {
+  .travel-services .row .services-gallery .little-img {
+    height: 460px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+.travel-services .row .services-gallery .big-img {
+  height: 460px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
 section {

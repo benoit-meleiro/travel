@@ -5,12 +5,53 @@
     h2{
         font-size:$h2-size;
         color:$h2-color;
-    }
-    .services-gallery{
-        max-height: 470px !important;
-        overflow: hidden;
-        .legende-image {
-            @include legende-on-image()
         }
+    .row{
+            .services-gallery{
+                max-height: 470px !important;
+                overflow: hidden;
+                gap: 4px;
+                padding: 5px;
+                @include for-phone-only {
+                    max-height:960px !important;
+                    gap: 8px;
+                    
+                }
+                
+                .block-services{
+                    position:relative;
+                    
+                    margin: 0;
+                    img{
+                        @include position-on-services();
+                    }
+                    .legende-image {
+                        @include position-on-services();
+                        z-index: 1;
+                        }
+                        p{
+                            font-size: $var-size-legende;
+                            color:$var-color-legende;
+                            margin: 0;
+                        }
+                        a{
+                            @include  link-on-site(white)
+                        }
+                }
+                .little-img{
+                    @include services-img($little-img);
+                    @include for-phone-only {
+                        @include services-img($big-img);
+                    }
+                    
+                }
+                .big-img{
+                    @include services-img($big-img)
+                }
+            }
+                
+                    
     }
+                
 }
+    
